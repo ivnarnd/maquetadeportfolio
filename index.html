@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ivan Alexander Aranda</title>
 </head>
+
 <body>
     <header>
         <img src="" alt="logo de ivan aranda">
@@ -17,13 +19,99 @@
         </ul>
     </header>
     <main>
-        <header id="sobre-mi"></header>
-        <section id="proyectos"></section>
-        <section id="formacion"></section>
-        <section id="contacto"></section>
+        <header id="sobre-mi">
+            <section id="sobre-mi-card">
+                <img src="./images/imagen_perfil.jpg" alt="imagen de perfil Ivan Aranda">
+                <h2>Ivan Alexander Aranda</h2>
+                <h3>Desarrollador Web</h3>
+                <ul id="sobre-mi-redes">
+                    <li class="sobre-mi-redes-item"><a href="">Linkedin</a></li>
+                    <li class="sobre-mi-redes-item"><a href="">Github</a></li>
+                    <li class="sobre-mi-redes-item"><a href="">CV</a></li>
+                </ul>
+            </section>
+            <p id="sobre-mi-descripcion">
+                Hola, soy Iván Alexander Aranda, estudiante de la Licenciatura en Sistemas en la Universidad Nacional de
+                La Plata. Me apasiona el desarrollo web y tengo experiencia en las tecnologías clave del front-end y
+                back-end. En el ámbito del desarrollo web, manejo con soltura HTML, CSS y JavaScript. He trabajado con
+                frameworks modernos como Next.js y librerías potentes como React, lo que me ha permitido crear
+                aplicaciones web dinámicas y eficientes. Además, tengo sólidos conocimientos en Node.js, lo que me
+                permite construir aplicaciones del lado del servidor robustas y escalables. Mi formación se complementa
+                con habilidades en la gestión de bases de datos tanto SQL como NoSQL, permitiéndome diseñar y manejar
+                sistemas de almacenamiento de datos versátiles y eficientes. Estoy siempre en búsqueda de nuevos retos y
+                oportunidades para aplicar y expandir mis conocimientos, contribuyendo a proyectos innovadores y de
+                impacto.
+            </p>
+        </header>
+        <section id="proyectos">
+            <header>
+                <h2>Proyectos</h2>
+            </header>
+            <section class="contendedor">
+                <section class="proyecto">
+                    <img src="./images/ihelados.png" alt="Captura de inicio de pagina ihelados">
+                    <h3>I-helados</h3>
+                    <p>Este Proyecto consiste en la pagina Web de una heladeria, realizado con las siguientes
+                        tecnologias: HTML,CSS,Sass</p>
+                    <a href="https://i-helados.vercel.app/">Deploy</a>
+                    <a href="https://github.com/ivnarnd/pagina-web-coder">Repositorio</a>
+                </section>
+            </section>
+        </section>
+        <section id="formacion">
+            <header>
+                <h2>Formacion</h2>
+            </header>
+            <section class="contenedor">
+                <section class="formacion">
+                    <img src="./images/unlp.png" alt="Logo de universidad nacional de la plata">
+                    <h3>UNLP</h3>
+                    <h4>Lic en Sistemas</h4>
+                    <p>2020</p>-<p>Actualidad</p>
+                </section>
+                <section class="formacion">
+                    <img src="./images/Logo_blackbg.png" alt="logo de coder house">
+                    <h3>Coder House</h3>
+                    <h4>Desarrolo Web</h4>
+                    <p>2023</p>
+                </section>
+                <section class="formacion">
+                    <img src="./images/Logo_blackbg.png" alt="logo de coder house">
+                    <h3>Coder House</h3>
+                    <h4>Desarrollo Backend</h4>
+                    <p>2023</p>
+                </section>
+                <section class="formacion">
+                    <img src="./images/Logo_blackbg.png" alt="logo de coder house">
+                    <h3>Coder House</h3>
+                    <h4>React</h4>
+                    <p>2023</p>
+                </section>
+            </section>
+        </section>
+        <section id="contacto">
+            <header>
+                <h2>Contacto</h2>
+            </header>
+            <section class="contenedor">
+                <img src="./images/stephen-harlan-NYTa57zrmQ0-unsplash.jpg"
+                    alt="imagen de un buzon de correo sobre la calle">
+                <form action="">
+                    <fieldset>
+                        <legend>Completando el Formulario me pondre en contacto con usted lo antes posible</legend>
+                        <label for="">Nombre <input type="text"></label>
+                        <label for="">Correo <input type="text"></label>
+                        <label for="">Asunto <input type="text"></label>
+                        <label for="">Mensaje <textarea name="" id=""></textarea></label>
+                    </fieldset>
+
+                </form>
+            </section>
+        </section>
     </main>
     <footer>
         <p>Desarrollado por Ivan Aranda - 2024</p>
     </footer>
 </body>
+
 </html>
