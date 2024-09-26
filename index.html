@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Ivan Alexander Aranda</title>
 </head>
 
 <body>
-    <header>
-        <img src="./images/logo.svg" alt="logo de ivan aranda">
-        <h1>Ivan Aranda</h1>
-        <ul>
-            <li><a href="#sobre-mi">Sobre Mi</a></li>
-            <li><a href="#proyectos">Proyectos</a></li>
-            <li><a href="#formacion">Formacion</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+    <header id="header-nav">
+        <h1>Ivan Alexander Aranda</h1>
+        <ul id="barra-nav">
+            <li class="item-nav"><a href="#sobre-mi">Sobre Mi</a></li>
+            <li class="item-nav"><a href="#proyectos">Proyectos</a></li>
+            <li class="item-nav"><a href="#formacion">Formacion</a></li>
+            <li class="item-nav"><a href="#contacto">Contacto</a></li>
         </ul>
     </header>
     <main>
         <header id="sobre-mi">
             <section id="sobre-mi-card">
-                <img src="./images/imagen_perfil.jpg" alt="imagen de perfil Ivan Aranda">
+                <img id="sobre-mi-img" src="./images/imagen_perfil.jpg" alt="imagen de perfil Ivan Aranda">
                 <h2>Ivan Alexander Aranda</h2>
                 <h3>Desarrollador Web</h3>
                 <ul id="sobre-mi-redes">
@@ -43,22 +46,24 @@
                 impacto.
             </p>
         </header>
-        <section id="proyectos">
+        <section id="proyectos" class="secciones">
             <header>
                 <h2>Proyectos</h2>
             </header>
-            <section class="contendedor">
+            <section class="contenedor">
                 <section class="proyecto">
                     <img src="./images/ihelados.png" alt="Captura de inicio de pagina ihelados">
                     <h3>I-helados</h3>
                     <p>Este Proyecto consiste en la pagina Web de una heladeria, realizado con las siguientes
                         tecnologias: HTML,CSS,Sass</p>
-                    <a href="https://i-helados.vercel.app/">Deploy</a>
-                    <a href="https://github.com/ivnarnd/pagina-web-coder">Repositorio</a>
+                    <ul class="botonera">
+                        <li class="boton-item"><a href="https://i-helados.vercel.app/">Deploy</a></li>
+                        <li class="boton-item"><a href="https://github.com/ivnarnd/pagina-web-coder">Repositorio</a></li>
+                    </ul>
                 </section>
             </section>
         </section>
-        <section id="formacion">
+        <section id="formacion" class="secciones">
             <header>
                 <h2>Formacion</h2>
             </header>
@@ -67,7 +72,7 @@
                     <img src="./images/unlp.png" alt="Logo de universidad nacional de la plata">
                     <h3>UNLP</h3>
                     <h4>Lic en Sistemas</h4>
-                    <p>2020</p>-<p>Actualidad</p>
+                    <p>2020 - Actualidad</p>
                 </section>
                 <section class="formacion">
                     <img src="./images/Logo_blackbg.png" alt="logo de coder house">
@@ -89,22 +94,22 @@
                 </section>
             </section>
         </section>
-        <section id="contacto">
+        <section id="contacto" class="secciones">
             <header>
                 <h2>Contacto</h2>
             </header>
-            <section class="contenedor">
-                <img src="./images/stephen-harlan-NYTa57zrmQ0-unsplash.jpg"
+            <section id="section-contacto" class="contenedor">
+                <img id="imagen-contacto" src="./images/stephen-harlan-NYTa57zrmQ0-unsplash.jpg"
                     alt="imagen de un buzon de correo sobre la calle">
-                <form action="">
+                <form action="" id="form-contacto">
                     <fieldset>
                         <legend>Completando el Formulario me pondre en contacto con usted lo antes posible</legend>
-                        <label for="">Nombre <input type="text"></label>
-                        <label for="">Correo <input type="text"></label>
-                        <label for="">Asunto <input type="text"></label>
-                        <label for="">Mensaje <textarea name="" id=""></textarea></label>
+                        <label id="label-nombre" for="nombre">Nombre <input id="nombre" type="text"></label>
+                        <label id="label-correo"for="email">Correo <input id="email" type="email"></label>
+                        <label id="label-asunto" for="asunto">Asunto <input id="asunto" type="text"></label>
+                        <label id="label-mensaje" for="mensaje">Mensaje <textarea  name="" id="mensaje"></textarea></label>
                     </fieldset>
-                    <button type="submit">Enviar</button>
+                    <button id="btn-enviar" type="submit">Enviar</button>
 
                 </form>
             </section>
