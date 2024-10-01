@@ -8,9 +8,8 @@ a{text-decoration: none;color: inherit;}
 body{
     width: 100vw;
     /* background: linear-gradient(135deg, #FFFFFF, #333333); */
-    background-color: #0C0910;
-    color: #E8E9EB;
-
+    background-color: #FFFDFD;
+    color: #2F2F2F;
     font-family: Raleway,sans-serif;
     display: grid;
     grid-template-columns: 5vw repeat(3,30vw) 5vw;
@@ -30,12 +29,15 @@ body{
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #7B287D;
+    background-color: #FFFDFD;
+    color: #000000;
+    border-bottom: 2px solid #CBD2D0;
     
 }
 h1{
     font-size: 1.1rem;
     padding: 1rem;
+    color: #0166FF;
 }
 #header-nav #barra-nav{
     display: flex;
@@ -43,16 +45,17 @@ h1{
     justify-content: space-around;
     width: 40%;
     height: 100%;
+    font-weight: 600;
 }
 main{
+    /* background-color:#F4F7F5; */
+    background-color: #F9F9F9;
     grid-area: main;
-    background-color: #151515;
     padding: 2rem;
-    border: 1px solid black;
 }
 #sobre-mi{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5,0.20fr);
     grid-template-areas:
     "title img"
@@ -63,24 +66,26 @@ main{
     justify-items: start;
     align-items:center;
     margin-bottom: 1rem;
-    min-height: 93vh;
+    height: 90vh;
+    border-bottom: 2px solid #CBD2D0;
 }
 #sobre-mi-img{
     justify-self: center;
     grid-area: img;
-    width: 50%;
-    height: 80%;
+    width: 60%;
+    height:100%;
     margin-bottom: 1rem;
     border-radius: 100%;
+    object-fit:cover;
 }
 #sobre-mi h2{
     grid-area: title;
     width: 90%;
     font-size: 2.5rem;
-    color: #7B287D;
+    color: #0166FF;
 }
 #sobre-mi h3{
-    color: #A393BF;
+    color: #690375;
     grid-area: position;
     width: 90%;
     font-size: 2rem;
@@ -94,24 +99,23 @@ main{
     justify-content: space-between;
 }
 .sobre-mi-redes-item{
-    border: 1px solid black;
     padding: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
+    color: white;
 }
 #github-item{
-    background-color: #f7f8fa;
-    color: #0C0910;
+    background-color: #000000;
 }
 #linkedin-item{
     background-color: #0A66C2;
 }
 #cv-item{
-    background-color: #7B287D;
+    background-color: #690375;
 }
 #sobre-mi-descripcion{
     grid-area: description;
     line-height: 1.3rem;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
 }
 .secciones{
     display: flex;
@@ -119,14 +123,14 @@ main{
     align-items: start;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #A393BF;
+    border-bottom: 2px solid #CBD2D0;
 }
 .secciones header{
     padding: 1rem;
 }
 .secciones header h2{
     font-size: 2rem;
-    color: #A393BF;
+    color: #000000;
 }
 .contenedor{
     padding: 1rem;
@@ -135,19 +139,21 @@ main{
     gap: 1rem;
 }
 .proyecto{
-    background-color: #A393BF;
-    border: 1px solid white;
+    background-color: #000000;
+    border: 2px solid #37123C;
+    color: #FFFDFD;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
 }
 .proyecto img{
     width: 500px;
     height: 250px;
     margin-bottom: 0.5rem;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
+    object-fit: fill;
     border: 1px solid white;
 }
 .proyecto h3{
@@ -167,8 +173,9 @@ main{
 }
 .boton-item{
     padding: 0.5rem;
-    border: 1px solid white;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
+    background-color: #0166FF;
+    color: #FFFDFD;
 }
 
 .formacion{
@@ -178,16 +185,16 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 1rem;
-    background-color: #A393BF;
+    border-radius: 0.2rem;
+    background-color: #000000;
+    color: #FFFDFD;
     
 }
 .formacion img{
-    border: 1px solid black;
     width: 400px;
     height: 120px;
     border-radius: 0.5rem;
-    object-fit: cover;
+    object-fit: fill;
 }
 .formacion h3{
     font-size: 1.3rem;
@@ -213,7 +220,8 @@ main{
 }
 #imagen-contacto{
     width: 45%;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
+    object-fit: cover;
 }
 #form-contacto{
     width: 50%;
@@ -222,8 +230,9 @@ main{
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-    background-color: #A393BF;
-    border-radius: 1rem;
+    background-color: #000000;
+    color: #FFFDFD;
+    border-radius: 0.2rem;
 }
 #form-contacto fieldset{
     padding: 1rem;
@@ -241,7 +250,7 @@ label{
 }
 label input{
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     border: none;
 }
 label textarea{
@@ -251,14 +260,16 @@ label textarea{
 }
 #btn-enviar{
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.2rem;
     width: 40%;
-    background-color: #A393BF;
-    border: 2px solid white;
+    background-color: #0166FF;
+    border: 0;
     color: white;
 }
 footer{
     text-align: center;
     grid-area: footer;
     padding: 2rem;
+    color: #000000;
+    border-top: 2px solid #CBD2D0;
 }
