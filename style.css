@@ -235,8 +235,9 @@ main{
     align-items: center;
     padding: 1rem;
     gap: 1rem;
-    background-color: #000000;
-    color: #FFFDFD;
+    background-color: #F9F9F9;
+    color: #000000;
+    border:2px inset #CBD2D0;
     border-radius: 0.2rem;
 }
 #form-contacto fieldset{
@@ -256,12 +257,13 @@ label{
 label input{
     width: 100%;
     border-radius: 0.2rem;
-    border: none;
+    border:2px inset #CBD2D0;
 }
 label textarea{
     display: block;
     width: 100%;
     height: 6rem;
+    border:2px inset #CBD2D0;
 }
 #btn-enviar{
     padding: 0.5rem;
@@ -270,6 +272,9 @@ label textarea{
     background-color: #0166FF;
     border: 0;
     color: white;
+}
+.not-border{
+    border-bottom: none;
 }
 footer{
     text-align: center;
