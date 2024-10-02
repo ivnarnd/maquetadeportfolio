@@ -165,8 +165,7 @@ main{
     height: 40%;
     margin-bottom: 0.5rem;
     border-radius: 0.2rem;
-    object-fit: cover;
-    border: 1px solid white;
+    object-fit: fill;
 }
 .proyecto h3{
     font-size: 1.2rem;
@@ -190,38 +189,33 @@ main{
 }
 
 .formacion{
+    width: 32.3%;
+    height: 60%;
     padding: 1rem;
-    min-width: 32%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 0.2rem;
-    background-color: #000000;
-    color: #FFFDFD;
-    
+    background-color: #F9F9F9;
+    border: 2px outset #CBD2D0;
+    color: #000000;
 }
 .formacion img{
-    width: 400px;
-    height: 120px;
+    width: 100%;
+    height: 40%;
     border-radius: 0.5rem;
     object-fit: fill;
 }
 .formacion h3{
     font-size: 1.3rem;
-    margin-bottom: 0.5rem;
 }
 .formacion h4{
     font-size: 1.2rem;
-    margin-bottom: 1rem;
 }
 .formacion p{
     text-align: center;
     border-radius: 1rem;
-    padding: 0.5rem;
-    display: inline;
- 
-    max-width: 40%;
 }
 
 #section-contacto{
