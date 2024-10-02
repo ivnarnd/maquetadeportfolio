@@ -1,3 +1,8 @@
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
 *{
     margin: 0;
     padding: 0;
@@ -48,55 +53,53 @@ h1{
     font-weight: 600;
 }
 main{
-    /* background-color:#F4F7F5; */
     background-color: #F9F9F9;
     grid-area: main;
-    padding: 2rem;
 }
 #sobre-mi{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5,0.20fr);
+    grid-template-rows: repeat(5,1fr);
     grid-template-areas:
     "title img"
     "position img"
+    "redes img"
     "redes img"
     "description description"
     ;
     justify-items: start;
     align-items:center;
-    margin-bottom: 1rem;
-    height: 90vh;
+    height: 93vh;
     border-bottom: 2px solid #CBD2D0;
+    text-align: center;
 }
 #sobre-mi-img{
     justify-self: center;
     grid-area: img;
-    width: 60%;
-    height:100%;
-    margin-bottom: 1rem;
+    width: 70%;
+    height:90%;
     border-radius: 100%;
     object-fit:cover;
 }
 #sobre-mi h2{
     grid-area: title;
-    width: 90%;
-    font-size: 2.5rem;
+    width: 100%;
+    font-size: 3rem;
     color: #0166FF;
 }
 #sobre-mi h3{
     color: #690375;
     grid-area: position;
-    width: 90%;
+    width: 100%;
     font-size: 2rem;
 }
 #sobre-mi-redes{
     grid-area: redes;
-    width: 300px;
+    width: 100%;
     height: 100px;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: start;
+    justify-content: space-evenly;
 }
 .sobre-mi-redes-item{
     padding: 0.5rem;
@@ -273,3 +276,5 @@ footer{
     color: #000000;
     border-top: 2px solid #CBD2D0;
 }
+
+/*Media*/
